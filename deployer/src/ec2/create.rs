@@ -398,6 +398,7 @@ pub async fn create(config: &PathBuf) -> Result<(), Error> {
                 name: d.instance.name.clone(),
                 region: d.instance.region.clone(),
                 ip: d.ip.clone().parse::<IpAddr>().unwrap(),
+                port: 4545,
             })
             .collect(),
     };

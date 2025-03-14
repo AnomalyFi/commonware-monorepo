@@ -244,6 +244,9 @@ pub struct Peer {
 
     /// Public IP address of the peer
     pub ip: IpAddr,
+
+    /// Service port of the peer
+    pub port: u16,
 }
 
 /// List of peers
